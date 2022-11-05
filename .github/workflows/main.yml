@@ -13,5 +13,5 @@ jobs:
           pwd
           mvn -v
       - name: 再检查检查
-        run: ls
+        run: ll
  
