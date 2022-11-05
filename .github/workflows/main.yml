@@ -12,7 +12,7 @@ jobs:
       - name: 检查检查
         run: |
           mvn clean
-          mvn install
-      - name: 再检查检查
+          mvn install -Dmaven.test.skip=true
+  - name: 再检查检查
         run: ls
  
