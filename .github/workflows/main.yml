@@ -10,7 +10,8 @@ jobs:
         uses: stCarolas/setup-maven@v.4.5
       - name: 检查检查
         run: |
-          ls
           pwd
           mvn -v
+      - name: 再检查检查
+          run: ls
  
