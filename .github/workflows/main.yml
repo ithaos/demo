@@ -6,6 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Java JDK
-        run: pwd 
+      - name: Maven打包中... LODING...
+        uses: stCarolas/setup-maven@v.4.5
+        run: ls
  
