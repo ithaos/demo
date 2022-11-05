@@ -1,6 +1,5 @@
 package haos.demo.redis_cache;
 
-import com.google.common.collect.Lists;
 import haos.demo.redis_cache.model.Person;
 import haos.demo.redis_cache.service.PersonService;
 import lombok.extern.slf4j.Slf4j;

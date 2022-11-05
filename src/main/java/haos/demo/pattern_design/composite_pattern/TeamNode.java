@@ -1,8 +1,9 @@
 package haos.demo.pattern_design.composite_pattern;
 
-import com.google.common.collect.Lists;
 import haos.demo.pattern_design.composite_pattern.abs.Node;
+import org.springframework.util.CollectionUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TeamNode extends Node {
@@ -26,6 +27,6 @@ public class TeamNode extends Node {
 
     public TeamNode(String name) {
         super(name);
-        childColl = Lists.newArrayList();
+        childColl = new ArrayList();
     }
 }
