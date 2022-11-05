@@ -7,6 +7,11 @@
       <option name="url" value="http://mvn.ziroom.com/public" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="aliyun maven" />
+      <option name="url" value="http://mvn.ziroom.com/public" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="sms-mvn-public-t" />
       <option name="name" value="sms-mvn-public-t" />
       <option name="url" value="http://maven.ziroom.com:8081/nexus/content/groups/public-t" />
