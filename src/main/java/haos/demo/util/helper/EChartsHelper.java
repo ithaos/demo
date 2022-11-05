@@ -2,7 +2,6 @@ package haos.demo.util.helper;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.icepear.echarts.Bar;
 import org.icepear.echarts.Line;
 import org.icepear.echarts.Pie;
@@ -31,7 +30,7 @@ public class EChartsHelper {
 
         if (CollectionUtils.isEmpty(dataSet)
                 || CollectionUtils.isEmpty(xAxis)) {
-            return StringUtils.EMPTY;
+            return "";
         }
 
         try {
@@ -54,7 +53,7 @@ public class EChartsHelper {
             return wrapOptions(engine.renderJsonOption(lineChart));
         } catch (Exception e) {
             log.error("渲染折线图失败", e);
-            return StringUtils.EMPTY;
+            return "";
         }
     }
 
@@ -101,7 +100,7 @@ public class EChartsHelper {
 
         if (CollectionUtils.isEmpty(dataSet)
                 || CollectionUtils.isEmpty(xAxis)) {
-            return StringUtils.EMPTY;
+            return "";
         }
         try {
             Bar bar = new Bar()
@@ -125,7 +124,7 @@ public class EChartsHelper {
             return wrapOptions(engine.renderJsonOption(bar));
         } catch (Exception e) {
             log.error("渲染折线图失败", e);
-            return StringUtils.EMPTY;
+            return "";
         }
     }
 
@@ -137,7 +136,7 @@ public class EChartsHelper {
      */
     public static String renderPie(String title, Map<String, Number> dataSet) {
         if (CollectionUtils.isEmpty(dataSet)) {
-            return StringUtils.EMPTY;
+            return "";
         }
 
         try {
@@ -163,7 +162,7 @@ public class EChartsHelper {
             return wrapOptions(engine.renderJsonOption(pie));
         } catch (Exception e) {
             log.error("渲染饼图失败", e);
-            return StringUtils.EMPTY;
+            return "";
         }
     }
 
