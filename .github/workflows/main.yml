@@ -1,0 +1,11 @@
+name: demo
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Java JDK
+        run: pwd 
+ 
