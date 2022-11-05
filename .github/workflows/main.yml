@@ -8,5 +8,7 @@ jobs:
     steps:
       - name: Maven打包中... LODING...
         uses: stCarolas/setup-maven@v.4.5
+      - name: 检查检查
         run: ls
+             pwd
  
