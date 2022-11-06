@@ -23,6 +23,14 @@ jobs:
           docker build --tag ccr.ccs.tencentyun.com/haos/demo:v1 .
           # 推送镜像到镜像仓库
           docker push ccr.ccs.tencentyun.com/haos/demo:v1
+      - name: 登陆远程服务器... LOADING...
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: ls -a
+          host: haos.fun
+          username: root
+          port: 22
+          privateKey: ${{ secrets.PRIVATE_KEY}}
       - name: Cat 文件中...
         run: ls
  
