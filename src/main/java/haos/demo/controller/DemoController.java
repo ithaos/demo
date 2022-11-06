@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/demo")
 public class DemoController {
 
-    @RequestMapping("/01")
+    @RequestMapping("/012")
     public String demo01(){
         return "01";
     }
