@@ -12,7 +12,7 @@ jobs:
         run: |
           mvn clean
           mvn install -Dmaven.test.skip=true
-      - name: 构造镜像文件准备走... LOADING...
+      - name: 构造镜像文件准备中... LOADING...
         run: |
           mv target/*.jar docker/APP.jar
           cd docker
@@ -20,7 +20,7 @@ jobs:
       - name: Docker 镜像构造上传中... LOADING...
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: ccr.ccs.tencentyun.com/haos/demo
+          name: ccr.ccs.tencentyun.com
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Cat 文件中...
