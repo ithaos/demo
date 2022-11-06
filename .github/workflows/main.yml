@@ -26,7 +26,7 @@ jobs:
       - name: 登陆远程服务器... LOADING...
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: ls -a
+          command: ls -a;pwd;docker -v
           host: haos.fun
           username: root
           port: 22
