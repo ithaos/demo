@@ -15,14 +15,14 @@ jobs:
       - name: 构造镜像文件准备中... LOADING...
         run: |
           mv target/*.jar docker/APP.jar
-      - name: Docker 镜像构造上传中... LOADING...
-        run: |
-          docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }} ccr.ccs.tencentyun.com
-          cd docker
+      #- name: Docker 镜像构造上传中... LOADING...
+        #run: |
+          #docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }} ccr.ccs.tencentyun.com
+          #cd docker
           # 使用Dockerfile构建镜像
-          docker build --tag ccr.ccs.tencentyun.com/haos/demo:v1 .
+          #docker build --tag ccr.ccs.tencentyun.com/haos/demo:v1 .
           # 推送镜像到镜像仓库
-          docker push ccr.ccs.tencentyun.com/haos/demo:v1
+          #docker push ccr.ccs.tencentyun.com/haos/demo:v1
       - name: 登陆远程服务器... LOADING...
         uses: garygrossgarten/github-action-ssh@release
         with:
@@ -30,7 +30,7 @@ jobs:
           host: haos.fun
           username: root
           port: 22
-          privateKey: ${{ secrets.PRIVATE_KEY}}
+          password: ${{ secrets.ROOT_PASSWORD}}
       - name: Cat 文件中...
         run: ls
  
