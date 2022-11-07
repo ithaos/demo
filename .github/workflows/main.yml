@@ -26,7 +26,7 @@ jobs:
       - name: 登陆远程服务器... LOADING... 重新部署中...
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: ll;docker stop app;docker remove app;docker pull ccr.ccs.tencentyun.com/haos/demo:v1;docker run -d -p 15006:8080 --name app ccr.ccs.tencentyun.com/haos/demo:v1
+          command: ll;docker stop app;docker rm app;docker pull ccr.ccs.tencentyun.com/haos/demo:v1;docker run -d -p 15006:8080 --name app ccr.ccs.tencentyun.com/haos/demo:v1
           host: haos.fun
           username: root
           port: 22
