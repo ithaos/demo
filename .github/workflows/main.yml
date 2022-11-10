@@ -15,6 +15,7 @@ jobs:
       - name: 构造镜像文件准备中... LOADING...
         run: |
           mv target/*.jar docker/APP.jar
+          cp ~/arthas-boot.jar docker/arthas.jar
       - name: Docker 镜像构造上传中... LOADING...
         run: |
           docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }} ccr.ccs.tencentyun.com
