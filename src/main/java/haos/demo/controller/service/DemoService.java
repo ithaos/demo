@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class DemoService {
 
-    private static List<String> works = Arrays.asList("码农", "学生", "社区人员", "被隔离者", "防护人员");
+    private static List<String> works = Arrays.asList("码农", "学生", "社区人员", "被隔离者", "防护人员", "教师");
 
     public JSONObject handle1(String name) {
         if (StringUtils.isEmpty(name)) {
