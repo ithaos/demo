@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 @EnableCaching
 public class DemoApplication {
     public static void main(String[] args) {
-        System.out.println("项目开始跑了");
+        System.out.println("项目开始跑了--");
         SpringApplication.run(DemoApplication.class, args);
     }
 }

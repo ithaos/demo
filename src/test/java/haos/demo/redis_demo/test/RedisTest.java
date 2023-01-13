@@ -27,6 +27,7 @@ public class RedisTest {
 //            e.printStackTrace();
 //        }
         System.out.println(redisTemplate.opsForValue().get("queryPerson::zky"));
+        //redisTemplate.opsForValue().setIfPresent()
     }
 
 }
