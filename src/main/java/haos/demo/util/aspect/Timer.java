@@ -15,10 +15,10 @@ import java.util.Date;
 @Component
 public class Timer {
 
-    private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     @Around("execution(public * haos.demo.redis_cache.QueryDataController.*(..))")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
+        final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date start = Instant.now().toDate();
         log.info("----------------- query start time {} -----------------", sdf.format(start));
 
