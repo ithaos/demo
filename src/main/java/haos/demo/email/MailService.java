@@ -7,7 +7,9 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
-
+/**
+ * 邮件服务
+ */
 @Component
 public class MailService {
     @Resource
