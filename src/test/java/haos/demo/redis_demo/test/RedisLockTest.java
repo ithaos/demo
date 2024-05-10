@@ -1,7 +1,7 @@
 package haos.demo.redis_demo.test;
 
 
-import haos.demo.util.helper.RedisLockHelper;
+import haos.demo.common.util.helper.RedisLockHelper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

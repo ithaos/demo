@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 @AllArgsConstructor
 public class TopicMQProvider {
 

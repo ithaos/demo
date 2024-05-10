@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 
-@Configuration
+//@Configuration
 public class RabbitConfig {
 
 //    消费者配置

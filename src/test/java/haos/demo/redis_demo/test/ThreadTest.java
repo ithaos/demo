@@ -1,13 +1,11 @@
 package haos.demo.redis_demo.test;
 
-import haos.demo.completable_future.FutureService;
+import haos.demo.thread.completable_future.FutureService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.retry.backoff.Sleeper;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;

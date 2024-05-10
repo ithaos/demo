@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="artifactory" />
       <option name="name" value="artifactory" />
       <option name="url" value="http://mvn.ziroom.com/public" />
@@ -10,6 +15,11 @@
       <option name="id" value="central" />
       <option name="name" value="aliyun maven" />
       <option name="url" value="http://mvn.ziroom.com/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="allinpaynmg" />
+      <option name="name" value="allinpaynmg" />
+      <option name="url" value="http://nexus.allinpaynmg.com/repository/3rd-party/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="sms-mvn-public-t" />
@@ -27,9 +37,19 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="ziroom-public" />
+      <option name="name" value="ziroom-public" />
+      <option name="url" value="http://mvn.ziroom.com/public" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ali" />
+      <option name="name" value="ali" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="alimaven" />

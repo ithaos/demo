@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @Author haos1
  * @Date 2022/10/26 16:06
  */
-@Component
+//@Component
 public class TopicMQConsumer {
 
     /**

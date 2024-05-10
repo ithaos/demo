@@ -1,3 +1,5 @@
+server:
+  port: 80
 spring:
   # 对应 RedisProperties 类
   redis:
@@ -19,15 +21,15 @@ spring:
       url: jdbc:mysql://43.138.77.114:3306/demo
       username: root
       password: 123456
-  rabbitmq:
-    first:
-      username: haos
-      password: haos
-      virtual-host: haos
-      addresses: haos.fun #集群
-    second:
-      username: guest
-      password: guest
-      virtual-host: /
-      host: 127.0.0.1
-      port: 5672
+#  rabbitmq:
+#    first:
+#      username: haos
+#      password: haos
+#      virtual-host: haos
+#      addresses: haos.fun #集群
+#    second:
+#      username: guest
+#      password: guest
+#      virtual-host: /
+#      host: 127.0.0.1
+#      port: 5672
