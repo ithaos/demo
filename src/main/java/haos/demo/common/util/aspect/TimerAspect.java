@@ -1,5 +1,6 @@
 package haos.demo.common.util.aspect;
 
+import haos.demo.common.util.annotation.Timer;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint; //目标函数
 import org.aspectj.lang.annotation.Around;
@@ -13,11 +14,11 @@ import java.util.Date;
 @Slf4j
 @Aspect
 @Component
-public class Timer {
+public class TimerAspect {
 
 
-    @Around("execution(public * haos.demo.redis_cache.QueryDataController.*(..))")
-    public Object around(ProceedingJoinPoint pjp) throws Throwable {
+    @Around("@annotation(timer)")
+    public Object around(ProceedingJoinPoint pjp, Timer timer) throws Throwable {
         final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date start = Instant.now().toDate();
         log.info("----------------- query start time {} -----------------", sdf.format(start));
